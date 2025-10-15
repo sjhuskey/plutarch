@@ -63,6 +63,11 @@ def remove_footnotes(text):
 def process_file(input_directory, output_directory):
     """
     Process all text files in the input directory and save the cleaned versions to the output directory.
+    args:
+        input_directory (Path): The directory containing the input text files.
+        output_directory (Path): The directory to save the cleaned text files.
+    Returns:
+        None
     """
     for file_path in input_directory.glob("*.txt"):
         with open(file_path, "r", encoding="utf-8") as f:
