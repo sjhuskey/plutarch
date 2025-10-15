@@ -1,0 +1,640 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2025-10-15">
+    <creator>NetworkX 3.4.2</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="type" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Licinia" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Plotinus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Crassus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Sulla" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Archidamus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Marius" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Cæsar" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Pompeius" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Cicero" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Alexander" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Aristoteles" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Cinna" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Prætor" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Vibius Pacianus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Vibius" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Metellus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Imperator" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Magnus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Great" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Cato" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Sicinius" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Lentulus Batiates" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Spartacus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Dionysus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Furius" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Publius Barinus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Barinus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Cossinus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Gellius" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Lentulus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Cassius" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Padus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Mummius" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Lucullus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Caius Cannicius" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Castus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Quintius" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Scrofas" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Sertorius" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Hercules" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Onatius Aurelius" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Catulus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Catiline" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Publius" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Catuli" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Ciceros" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Catos" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Gaul" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Domitius" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Marcellinus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Mithridates" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Ateius" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Deiotarus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Aphrodite" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Venus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Hera" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Juno" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Arsakes" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Seleukeia" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Vagises" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Artabazes" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Ariamnes" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Sillakes" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Surena" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Artavasdes" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Hyrodes" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Censorinus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Megabacchus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Hieronymus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Nikomachus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Tigranes" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Scipio Antiochus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Octavius" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Coponius" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Ignatius" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Andromachus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Archer" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Scorpion" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Petronius" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Pomaxathres" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Caius Paccianus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Milesiaca" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Aristeides" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Rustius" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Æsopus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Sybaris" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Arsakidæ" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Pacorus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Jason" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Euripides" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Agave" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Pentheus" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+      <node id="Phraates" label="PERSON">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Licinia" target="Plotinus" id="0" weight="1" />
+      <edge source="Licinia" target="Crassus" id="1" weight="1" />
+      <edge source="Crassus" target="Sulla" id="2" weight="6" />
+      <edge source="Crassus" target="Archidamus" id="3" weight="1" />
+      <edge source="Crassus" target="Marius" id="4" weight="2" />
+      <edge source="Crassus" target="Aristoteles" id="5" weight="1" />
+      <edge source="Crassus" target="Alexander" id="6" weight="1" />
+      <edge source="Crassus" target="Cinna" id="7" weight="2" />
+      <edge source="Crassus" target="Prætor" id="8" weight="1" />
+      <edge source="Crassus" target="Vibius" id="9" weight="4" />
+      <edge source="Crassus" target="Pompeius" id="10" weight="33" />
+      <edge source="Crassus" target="Imperator" id="11" weight="3" />
+      <edge source="Crassus" target="Magnus" id="12" weight="2" />
+      <edge source="Crassus" target="Great" id="13" weight="1" />
+      <edge source="Crassus" target="Cæsar" id="14" weight="10" />
+      <edge source="Crassus" target="Cato" id="15" weight="2" />
+      <edge source="Crassus" target="Sicinius" id="16" weight="1" />
+      <edge source="Crassus" target="Spartacus" id="17" weight="7" />
+      <edge source="Crassus" target="Mummius" id="18" weight="2" />
+      <edge source="Crassus" target="Lucullus" id="19" weight="2" />
+      <edge source="Crassus" target="Quintius" id="20" weight="1" />
+      <edge source="Crassus" target="Scrofas" id="21" weight="1" />
+      <edge source="Crassus" target="Sertorius" id="22" weight="1" />
+      <edge source="Crassus" target="Hercules" id="23" weight="1" />
+      <edge source="Crassus" target="Onatius Aurelius" id="24" weight="1" />
+      <edge source="Crassus" target="Catulus" id="25" weight="1" />
+      <edge source="Crassus" target="Catiline" id="26" weight="2" />
+      <edge source="Crassus" target="Cicero" id="27" weight="3" />
+      <edge source="Crassus" target="Gaul" id="28" weight="1" />
+      <edge source="Crassus" target="Domitius" id="29" weight="2" />
+      <edge source="Crassus" target="Ateius" id="30" weight="3" />
+      <edge source="Crassus" target="Deiotarus" id="31" weight="1" />
+      <edge source="Crassus" target="Aphrodite" id="32" weight="1" />
+      <edge source="Crassus" target="Venus" id="33" weight="1" />
+      <edge source="Crassus" target="Hera" id="34" weight="1" />
+      <edge source="Crassus" target="Juno" id="35" weight="1" />
+      <edge source="Crassus" target="Arsakes" id="36" weight="2" />
+      <edge source="Crassus" target="Seleukeia" id="37" weight="2" />
+      <edge source="Crassus" target="Vagises" id="38" weight="1" />
+      <edge source="Crassus" target="Artabazes" id="39" weight="1" />
+      <edge source="Crassus" target="Cassius" id="40" weight="8" />
+      <edge source="Crassus" target="Ariamnes" id="41" weight="1" />
+      <edge source="Crassus" target="Hyrodes" id="42" weight="4" />
+      <edge source="Crassus" target="Artavasdes" id="43" weight="3" />
+      <edge source="Crassus" target="Surena" id="44" weight="13" />
+      <edge source="Crassus" target="Censorinus" id="45" weight="1" />
+      <edge source="Crassus" target="Megabacchus" id="46" weight="1" />
+      <edge source="Crassus" target="Publius" id="47" weight="3" />
+      <edge source="Crassus" target="Ignatius" id="48" weight="1" />
+      <edge source="Crassus" target="Coponius" id="49" weight="2" />
+      <edge source="Crassus" target="Andromachus" id="50" weight="3" />
+      <edge source="Crassus" target="Octavius" id="51" weight="4" />
+      <edge source="Crassus" target="Petronius" id="52" weight="2" />
+      <edge source="Crassus" target="Pomaxathres" id="53" weight="2" />
+      <edge source="Crassus" target="Caius Paccianus" id="54" weight="1" />
+      <edge source="Crassus" target="Jason" id="55" weight="2" />
+      <edge source="Crassus" target="Euripides" id="56" weight="1" />
+      <edge source="Crassus" target="Agave" id="57" weight="1" />
+      <edge source="Crassus" target="Sillakes" id="58" weight="2" />
+      <edge source="Crassus" target="Pentheus" id="59" weight="1" />
+      <edge source="Sulla" target="Metellus" id="60" weight="1" />
+      <edge source="Sulla" target="Pompeius" id="61" weight="2" />
+      <edge source="Sulla" target="Imperator" id="62" weight="1" />
+      <edge source="Archidamus" target="Marius" id="63" weight="1" />
+      <edge source="Marius" target="Cinna" id="64" weight="1" />
+      <edge source="Marius" target="Vibius Pacianus" id="65" weight="1" />
+      <edge source="Cæsar" target="Pompeius" id="66" weight="7" />
+      <edge source="Cæsar" target="Cicero" id="67" weight="2" />
+      <edge source="Cæsar" target="Cato" id="68" weight="2" />
+      <edge source="Cæsar" target="Gaul" id="69" weight="1" />
+      <edge source="Pompeius" target="Cicero" id="70" weight="1" />
+      <edge source="Pompeius" target="Imperator" id="71" weight="1" />
+      <edge source="Pompeius" target="Magnus" id="72" weight="2" />
+      <edge source="Pompeius" target="Great" id="73" weight="1" />
+      <edge source="Pompeius" target="Cato" id="74" weight="3" />
+      <edge source="Pompeius" target="Lucullus" id="75" weight="2" />
+      <edge source="Pompeius" target="Sertorius" id="76" weight="1" />
+      <edge source="Pompeius" target="Onatius Aurelius" id="77" weight="1" />
+      <edge source="Pompeius" target="Gaul" id="78" weight="1" />
+      <edge source="Pompeius" target="Marcellinus" id="79" weight="1" />
+      <edge source="Pompeius" target="Domitius" id="80" weight="4" />
+      <edge source="Pompeius" target="Mithridates" id="81" weight="1" />
+      <edge source="Pompeius" target="Ateius" id="82" weight="1" />
+      <edge source="Cicero" target="Catiline" id="83" weight="1" />
+      <edge source="Cicero" target="Publius" id="84" weight="1" />
+      <edge source="Alexander" target="Aristoteles" id="85" weight="1" />
+      <edge source="Imperator" target="Octavius" id="86" weight="1" />
+      <edge source="Imperator" target="Caius Paccianus" id="87" weight="1" />
+      <edge source="Magnus" target="Great" id="88" weight="1" />
+      <edge source="Cato" target="Domitius" id="89" weight="3" />
+      <edge source="Lentulus Batiates" target="Spartacus" id="90" weight="1" />
+      <edge source="Spartacus" target="Dionysus" id="91" weight="1" />
+      <edge source="Spartacus" target="Cossinus" id="92" weight="2" />
+      <edge source="Spartacus" target="Barinus" id="93" weight="1" />
+      <edge source="Spartacus" target="Gellius" id="94" weight="1" />
+      <edge source="Spartacus" target="Lentulus" id="95" weight="1" />
+      <edge source="Spartacus" target="Cassius" id="96" weight="1" />
+      <edge source="Spartacus" target="Padus" id="97" weight="1" />
+      <edge source="Spartacus" target="Mummius" id="98" weight="1" />
+      <edge source="Spartacus" target="Quintius" id="99" weight="1" />
+      <edge source="Spartacus" target="Scrofas" id="100" weight="1" />
+      <edge source="Furius" target="Publius Barinus" id="101" weight="1" />
+      <edge source="Barinus" target="Cossinus" id="102" weight="1" />
+      <edge source="Cassius" target="Padus" id="103" weight="1" />
+      <edge source="Cassius" target="Octavius" id="104" weight="1" />
+      <edge source="Cassius" target="Surena" id="105" weight="4" />
+      <edge source="Cassius" target="Archer" id="106" weight="1" />
+      <edge source="Cassius" target="Scorpion" id="107" weight="1" />
+      <edge source="Lucullus" target="Mithridates" id="108" weight="1" />
+      <edge source="Lucullus" target="Tigranes" id="109" weight="1" />
+      <edge source="Lucullus" target="Scipio Antiochus" id="110" weight="1" />
+      <edge source="Caius Cannicius" target="Castus" id="111" weight="1" />
+      <edge source="Quintius" target="Scrofas" id="112" weight="1" />
+      <edge source="Publius" target="Hieronymus" id="113" weight="1" />
+      <edge source="Publius" target="Nikomachus" id="114" weight="1" />
+      <edge source="Catuli" target="Ciceros" id="115" weight="1" />
+      <edge source="Catuli" target="Catos" id="116" weight="1" />
+      <edge source="Ciceros" target="Catos" id="117" weight="1" />
+      <edge source="Domitius" target="Marcellinus" id="118" weight="1" />
+      <edge source="Aphrodite" target="Venus" id="119" weight="1" />
+      <edge source="Aphrodite" target="Hera" id="120" weight="1" />
+      <edge source="Aphrodite" target="Juno" id="121" weight="1" />
+      <edge source="Venus" target="Hera" id="122" weight="1" />
+      <edge source="Venus" target="Juno" id="123" weight="1" />
+      <edge source="Hera" target="Juno" id="124" weight="1" />
+      <edge source="Seleukeia" target="Vagises" id="125" weight="1" />
+      <edge source="Seleukeia" target="Hyrodes" id="126" weight="2" />
+      <edge source="Seleukeia" target="Surena" id="127" weight="1" />
+      <edge source="Sillakes" target="Surena" id="128" weight="1" />
+      <edge source="Sillakes" target="Jason" id="129" weight="1" />
+      <edge source="Sillakes" target="Pentheus" id="130" weight="1" />
+      <edge source="Surena" target="Hyrodes" id="131" weight="5" />
+      <edge source="Surena" target="Artavasdes" id="132" weight="1" />
+      <edge source="Surena" target="Milesiaca" id="133" weight="1" />
+      <edge source="Surena" target="Aristeides" id="134" weight="1" />
+      <edge source="Surena" target="Rustius" id="135" weight="1" />
+      <edge source="Surena" target="Æsopus" id="136" weight="1" />
+      <edge source="Surena" target="Sybaris" id="137" weight="1" />
+      <edge source="Artavasdes" target="Hyrodes" id="138" weight="3" />
+      <edge source="Artavasdes" target="Pacorus" id="139" weight="1" />
+      <edge source="Hyrodes" target="Pacorus" id="140" weight="2" />
+      <edge source="Hyrodes" target="Phraates" id="141" weight="2" />
+      <edge source="Censorinus" target="Megabacchus" id="142" weight="2" />
+      <edge source="Hieronymus" target="Nikomachus" id="143" weight="1" />
+      <edge source="Tigranes" target="Scipio Antiochus" id="144" weight="1" />
+      <edge source="Octavius" target="Petronius" id="145" weight="2" />
+      <edge source="Coponius" target="Ignatius" id="146" weight="1" />
+      <edge source="Archer" target="Scorpion" id="147" weight="1" />
+      <edge source="Petronius" target="Pomaxathres" id="148" weight="1" />
+      <edge source="Pomaxathres" target="Jason" id="149" weight="2" />
+      <edge source="Milesiaca" target="Aristeides" id="150" weight="1" />
+      <edge source="Milesiaca" target="Rustius" id="151" weight="1" />
+      <edge source="Aristeides" target="Rustius" id="152" weight="1" />
+      <edge source="Rustius" target="Arsakidæ" id="153" weight="1" />
+      <edge source="Æsopus" target="Sybaris" id="154" weight="1" />
+      <edge source="Pacorus" target="Phraates" id="155" weight="1" />
+      <edge source="Jason" target="Euripides" id="156" weight="1" />
+      <edge source="Jason" target="Agave" id="157" weight="1" />
+      <edge source="Jason" target="Pentheus" id="158" weight="1" />
+      <edge source="Euripides" target="Agave" id="159" weight="1" />
+    </edges>
+  </graph>
+</gexf>

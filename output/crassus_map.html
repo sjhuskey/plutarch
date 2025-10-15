@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bbf6012d24f82443d4ce8cf87b9681b2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bbf6012d24f82443d4ce8cf87b9681b2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bbf6012d24f82443d4ce8cf87b9681b2 = L.map(
+                "map_bbf6012d24f82443d4ce8cf87b9681b2",
+                {
+                    center: [37.75381401538461, 12.784105274358977],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6a5156cbc5bffc66e0ae6f41121cc7f1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6a5156cbc5bffc66e0ae6f41121cc7f1.addTo(map_bbf6012d24f82443d4ce8cf87b9681b2);
+        
+    
+            var marker_cluster_d8f9ecf3566209c78296b8b77ddbc851 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_d63db84cead78bbafd46d8653f5510f0 = L.circleMarker(
+                [41.8933203, 12.4829321],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_f859ed6f1b01915245c6c84992e07216 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_6b361b74a78e17e64ba3518893a1b98b = $(`<div id="html_6b361b74a78e17e64ba3518893a1b98b" style="width: 100.0%; height: 100.0%;">     <b>Rome</b> → <i>Rome</i><br>     <b>Mentions:</b> 15<br>     <b>Geocoder:</b> Roma, Roma Capitale, Lazio, Italia<br><br>     <b>Examples:</b><br>• Besides this, observing the accidents that were indigenous and familiar at Rome, conflagrations, and tumbling down of houses owing to their weight and crowded state, he bought slaves, who were architects and builders.<br><br>• thus the greatest part of Rome fell into the hands of Crassus: but, though he had so many artizans, he built no house except his own; for he used to say that those who were fond of building were ruined by themselves, without the aid of any opponent.     </div>`)[0];
+                popup_f859ed6f1b01915245c6c84992e07216.setContent(html_6b361b74a78e17e64ba3518893a1b98b);
+            
+        
+
+        circle_marker_d63db84cead78bbafd46d8653f5510f0.bindPopup(popup_f859ed6f1b01915245c6c84992e07216)
+        ;
+
+        
+    
+    
+            circle_marker_d63db84cead78bbafd46d8653f5510f0.bindTooltip(
+                `<div>
+                     Rome (15)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0be5304cb68cf28cbaef456648462610 = L.circleMarker(
+                [36.8710059, 39.0251364],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_d31e5cd06b682ec22c1924c07231402d = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_7775619e01f09986670c8f4fa31d7056 = $(`<div id="html_7775619e01f09986670c8f4fa31d7056" style="width: 100.0%; height: 100.0%;">     <b>Carrhæ</b> → <i>Carrhæ</i><br>     <b>Mentions:</b> 7<br>     <b>Geocoder:</b> Harran, Şanlıurfa, Güneydoğu Anadolu Bölgesi, Türkiye<br><br>     <b>Examples:</b><br>• There were with Publius two Greeks, who belonged to the dwellers in those parts in Carrhæ, Hieronymus and Nikomachus, both of whom attempted to persuade Publius to retire with them, and to make his escape to Ichnæ a city which had taken the side of the Romans, and was not far off.<br><br>• After frequently turning from their route, and frequently putting themselves in order of battle, and taking up the wounded who followed, and then laying them down again, they lost much time on the march, with the exception of three hundred horsemen, with Ignatius at their head, who reached Carrhæ about midnight.     </div>`)[0];
+                popup_d31e5cd06b682ec22c1924c07231402d.setContent(html_7775619e01f09986670c8f4fa31d7056);
+            
+        
+
+        circle_marker_0be5304cb68cf28cbaef456648462610.bindPopup(popup_d31e5cd06b682ec22c1924c07231402d)
+        ;
+
+        
+    
+    
+            circle_marker_0be5304cb68cf28cbaef456648462610.bindTooltip(
+                `<div>
+                     Carrhæ (7)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_416bd6b54bff48a501acc356771889f9 = L.circleMarker(
+                [34.8147886, 38.4231781],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_4edca889dd2b4e7fdc97a472275e4d45 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_5f7033b84df5a6144a176922519b81c1 = $(`<div id="html_5f7033b84df5a6144a176922519b81c1" style="width: 100.0%; height: 100.0%;">     <b>Syria</b> → <i>Syria</i><br>     <b>Mentions:</b> 6<br>     <b>Geocoder:</b> سورية, سوريا<br><br>     <b>Examples:</b><br>• Shortly after, they again surrounded the Senate-house with armed men, and, after driving Cato out of the Forum, and killing some persons who opposed them, they procured another five years of administration to be added to Cæsar's term, and the two provinces of Syria and Iberia to be given to them.<br><br>• When the lots were cast, Crassus got Syria, and Pompeius had Iberia.  XVI.     </div>`)[0];
+                popup_4edca889dd2b4e7fdc97a472275e4d45.setContent(html_5f7033b84df5a6144a176922519b81c1);
+            
+        
+
+        circle_marker_416bd6b54bff48a501acc356771889f9.bindPopup(popup_4edca889dd2b4e7fdc97a472275e4d45)
+        ;
+
+        
+    
+    
+            circle_marker_416bd6b54bff48a501acc356771889f9.bindTooltip(
+                `<div>
+                     Syria (6)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_01b76d7168244e4bd5ad591448333a49 = L.circleMarker(
+                [39.8963997, -4.4974366],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_a48f1a72eb1644c2ce7c75254f9f362a = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_5b24dab1b04f05ae502f2065a4db447f = $(`<div id="html_5b24dab1b04f05ae502f2065a4db447f" style="width: 100.0%; height: 100.0%;">     <b>Iberia</b> → <i>Iberia</i><br>     <b>Mentions:</b> 6<br>     <b>Geocoder:</b> Iberia, España<br><br>     <b>Examples:</b><br>• Crassus, being very young, escaped immediate danger; but, seeing that he was hemmed in on all sides, and hunted by the tyrants, he took with him three friends and ten slaves; and, using wonderful expedition, made his escape to Iberia, having been there before, when his father was Prætor, and having made himself friends.<br><br>• But afterwards, at least, they were on friendly terms, and, when Cæsar was going to Iberia, as prætor, and had no money in consequence of his creditors having come upon him and seizing all his outfit, Crassus did not leave him in this difficulty, but got him released, by becoming security for him to the amount of eight hundred and thirty talents.     </div>`)[0];
+                popup_a48f1a72eb1644c2ce7c75254f9f362a.setContent(html_5b24dab1b04f05ae502f2065a4db447f);
+            
+        
+
+        circle_marker_01b76d7168244e4bd5ad591448333a49.bindPopup(popup_a48f1a72eb1644c2ce7c75254f9f362a)
+        ;
+
+        
+    
+    
+            circle_marker_01b76d7168244e4bd5ad591448333a49.bindTooltip(
+                `<div>
+                     Iberia (6)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_72d58e5c87492fe5fafbf691b6fd9875 = L.circleMarker(
+                [50.1813995, 7.6535842],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_b83aa5846ff32ba54d2297b3380f1e26 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_6d8323a01860f31123194bd9347346ad = $(`<div id="html_6d8323a01860f31123194bd9347346ad" style="width: 100.0%; height: 100.0%;">     <b>Gaul</b> → <i>Gaul</i><br>     <b>Mentions:</b> 5<br>     <b>Geocoder:</b> Gaul, Kestert, Loreley, Rhein-Lahn-Kreis, Rheinland-Pfalz, Deutschland<br><br>     <b>Examples:</b><br>• Spartacus, after defeating the prætor himself in many other battles, and at last seizing his lictors and his horse, now became great and formidable: but still he formed a just judgment of the state of affairs and, not expecting to get the advantage over the power of the Romans, he designed to lead his forces to the Alps; thinking that it was advisable for them to cross the mountains and to go to their several homes, some to Thrace and some to Gaul.<br><br>• Spartacus now attempted to force his way towards the Alps; and Cassius who "was the governor of Gaul upon the Padus, met him with ten thousand men, and a battle was fought, in which Cassius was defeated with great lose, and with difficulty made his escape.     </div>`)[0];
+                popup_b83aa5846ff32ba54d2297b3380f1e26.setContent(html_6d8323a01860f31123194bd9347346ad);
+            
+        
+
+        circle_marker_72d58e5c87492fe5fafbf691b6fd9875.bindPopup(popup_b83aa5846ff32ba54d2297b3380f1e26)
+        ;
+
+        
+    
+    
+            circle_marker_72d58e5c87492fe5fafbf691b6fd9875.bindTooltip(
+                `<div>
+                     Gaul (5)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c5fa76f471fb85e482fc26cdb67e2d5 = L.circleMarker(
+                [42.6384261, 12.674297],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_e39d4a087d03182658394f3d6a1ec855 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_d95df85ba44d8d9f3860c3a3f807f1cb = $(`<div id="html_d95df85ba44d8d9f3860c3a3f807f1cb" style="width: 100.0%; height: 100.0%;">     <b>Italy</b> → <i>Italy</i><br>     <b>Mentions:</b> 4<br>     <b>Geocoder:</b> Italia<br><br>     <b>Examples:</b><br>• When Sulla had passed over the sea to Italy, he wished all the young men who were with him to aid him actively, and he appointed them to different duties.<br><br>• The insurrection of the gladiators and their devastation of Italy, which is generally called the war of Spartacus, originated as follows:--One Lentulus Batiates kept gladiators in Capua, of whom the majority, who were Gauls and Thracians, had been closely confined, not for any misbehaviour on their part, but through the villainy of their purchaser, for the purpose of fighting in the games.     </div>`)[0];
+                popup_e39d4a087d03182658394f3d6a1ec855.setContent(html_d95df85ba44d8d9f3860c3a3f807f1cb);
+            
+        
+
+        circle_marker_1c5fa76f471fb85e482fc26cdb67e2d5.bindPopup(popup_e39d4a087d03182658394f3d6a1ec855)
+        ;
+
+        
+    
+    
+            circle_marker_1c5fa76f471fb85e482fc26cdb67e2d5.bindTooltip(
+                `<div>
+                     Italy (4)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4a2538486a740f5da14e38fa8fdaa15f = L.circleMarker(
+                [34.9034867, 42.0588806],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_fed83d69b0de8120fc6db5c5a9d98a71 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_0492450d08e88ef73261c07b14147bb6 = $(`<div id="html_0492450d08e88ef73261c07b14147bb6" style="width: 100.0%; height: 100.0%;">     <b>Mesopotamia</b> → <i>Mesopotamia</i><br>     <b>Mentions:</b> 4<br>     <b>Geocoder:</b> Mesopotamia / Mezopotamya / Μεσοποταμία / بلاد الرافدين / ܒܝܬ ܢܗܪܝܢ, العراق<br><br>     <b>Examples:</b><br>• On his arrival, matters at first turned out fully equal to his expectation; for he easily threw a bridge over the Euphrates, and got his army across safely, and he also obtained possession of many cities in Mesopotamia which surrendered.<br><br>• From the cities of Mesopotamia, in which there were Roman garrisons, some soldiers, who made their escape at great hazard, brought reports that caused much anxiety, having been eye-witnesses of the numbers of the enemy, and of their mode of attacking the cities; and, as is usual, they magnified everything which they reported.     </div>`)[0];
+                popup_fed83d69b0de8120fc6db5c5a9d98a71.setContent(html_0492450d08e88ef73261c07b14147bb6);
+            
+        
+
+        circle_marker_4a2538486a740f5da14e38fa8fdaa15f.bindPopup(popup_fed83d69b0de8120fc6db5c5a9d98a71)
+        ;
+
+        
+    
+    
+            circle_marker_4a2538486a740f5da14e38fa8fdaa15f.bindTooltip(
+                `<div>
+                     Mesopotamia (4)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60389ff71ed3e148e5109d4001d6d489 = L.circleMarker(
+                [40.7696272, 44.6736646],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_0df16425b7e5cbffb02be7b17bc076dd = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_6272a2ed9c95746fcef5ae96ba3ad52e = $(`<div id="html_6272a2ed9c95746fcef5ae96ba3ad52e" style="width: 100.0%; height: 100.0%;">     <b>Armenia</b> → <i>Armenia</i><br>     <b>Mentions:</b> 4<br>     <b>Geocoder:</b> Հայաստան<br><br>     <b>Examples:</b><br>• He attempted to persuade Crassus to invade Parthia through Armenia; for, he said, the army would not only have abundance of provision in its march through the country by reason of him supplying them, but would also advance safely, having in their front many mountains and continuous hills, and ground unfavourable for cavalry, in which alone lay the strength of the Parthians.<br><br>• For Hyrodes had at first divided his forces into two parts, and he was himself ravaging Armenia to take vengeance on Artavasdes; but he sent Surena against the Romans, not because he despised them, as some say, for it was not consistent for him to disdain Crassus as an antagonist, the first of the Romans, and to war against Artavasdes and take the villages of Armenia; but it seems that he really feared the danger, and that he was on the watch to await the result, and that he put Surena in the front to try the fortune of a battle, and so to divert the enemy.     </div>`)[0];
+                popup_0df16425b7e5cbffb02be7b17bc076dd.setContent(html_6272a2ed9c95746fcef5ae96ba3ad52e);
+            
+        
+
+        circle_marker_60389ff71ed3e148e5109d4001d6d489.bindPopup(popup_0df16425b7e5cbffb02be7b17bc076dd)
+        ;
+
+        
+    
+    
+            circle_marker_60389ff71ed3e148e5109d4001d6d489.bindTooltip(
+                `<div>
+                     Armenia (4)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ec734752edbe37e7684769215f8f2abc = L.circleMarker(
+                [55.6812917, 12.5524508],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_0b759bbec68535ba8c0822071499521e = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_9dc1e151948ae727a773544a99127d1f = $(`<div id="html_9dc1e151948ae727a773544a99127d1f" style="width: 100.0%; height: 100.0%;">     <b>Forum</b> → <i>Forum</i><br>     <b>Mentions:</b> 3<br>     <b>Geocoder:</b> Forum, Julius Thomsens Plads, Frederiksberg, Frederiksberg Kommune, Region Hovedstaden, 1925, Danmark<br><br>     <b>Examples:</b><br>• And the result to each of them was something unusual; for, when Pompeius was absent from Rome, his name and his influence in the State, by reason of his military exploits, was superior to that of Crassus; but when Pompeius was at Rome, he often fell short of Crassus in influence, for his haughty temper and habitual pride made him avoid crowds and retire from the Forum, and seldom give his aid to those who sought it, and then not readily; his object being to keep his power at a higher pitch, by exercising it only on his own behalf.<br><br>• This alarmed the partizans of Pompeius, who now abstained from no proceeding, however disorderly and violent; but, in addition to all the rest, they placed a body of men to lie in wait and attack Domitius as he was going down to the Forum, while it was still dark, with his partizans, and they killed the man that held the light, and wounded many, among whom was Cato.     </div>`)[0];
+                popup_0b759bbec68535ba8c0822071499521e.setContent(html_9dc1e151948ae727a773544a99127d1f);
+            
+        
+
+        circle_marker_ec734752edbe37e7684769215f8f2abc.bindPopup(popup_0b759bbec68535ba8c0822071499521e)
+        ;
+
+        
+    
+    
+            circle_marker_ec734752edbe37e7684769215f8f2abc.bindTooltip(
+                `<div>
+                     Forum (3)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_718fe2eb26fb87a0e85fe7d8dd4f2eae = L.circleMarker(
+                [36.3778166, 33.9260372],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_eb8e59570d62f61a772eb2d9b793b25e = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_cccd6d176ec6b6dd770ef6e59da5c6f3 = $(`<div id="html_cccd6d176ec6b6dd770ef6e59da5c6f3" style="width: 100.0%; height: 100.0%;">     <b>Seleukeia</b> → <i>Seleukeia</i><br>     <b>Mentions:</b> 3<br>     <b>Geocoder:</b> Silifke, Mersin, Akdeniz Bölgesi, Türkiye<br><br>     <b>Examples:</b><br>• This seemed to be the first blunder of Crassus, or at least, it was the greatest blunder that he committed next to the expedition itself; for he ought to have advanced and to have secured Babylon and Seleukeia, two cities which were always hostile to the Parthians; instead of which, he gave his enemies time to make preparation.<br><br>• However, Cassius again had some conversation with Crassus, and advised him at least to give his troops rest in some of the garrisoned cities, till he should get some certain information about the enemy; but if he would not do this, to advance towards Seleukeia along the river.     </div>`)[0];
+                popup_eb8e59570d62f61a772eb2d9b793b25e.setContent(html_cccd6d176ec6b6dd770ef6e59da5c6f3);
+            
+        
+
+        circle_marker_718fe2eb26fb87a0e85fe7d8dd4f2eae.bindPopup(popup_eb8e59570d62f61a772eb2d9b793b25e)
+        ;
+
+        
+    
+    
+            circle_marker_718fe2eb26fb87a0e85fe7d8dd4f2eae.bindTooltip(
+                `<div>
+                     Seleukeia (3)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2087c11cc006d8cdd97e7396b0657381 = L.circleMarker(
+                [40.500571, 16.081953],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_1acf1310b17818592040d5456602841c = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_f6f244bb49b6ed1bc953fe69f725c1c4 = $(`<div id="html_f6f244bb49b6ed1bc953fe69f725c1c4" style="width: 100.0%; height: 100.0%;">     <b>Lucania</b> → <i>Lucania</i><br>     <b>Mentions:</b> 2<br>     <b>Geocoder:</b> Basilicata, Italia<br><br>     <b>Examples:</b><br>• Spartacus, however, avoided Crassus, and made his way through Lucania to the sea, and, falling in with some Cilician piratical vessels, in the Straits, he formed a design to seize Sicily, and by throwing two thousand men into the island, to kindle again the servile war there, the flames of which had not long since been quenched, and required only a few sparks to set it again in a blaze.<br><br>• This success was the ruin of Spartacus, in consequence of the self-confidence which it infused into the slaves: they would not now consent to avoid a battle, nor yet would they obey their commanders, whom they surrounded, with arms in their hands, on the march, and compelled to lead them back through Lucania against the Romans, wherein they did the very thing that Crassus desired     </div>`)[0];
+                popup_1acf1310b17818592040d5456602841c.setContent(html_f6f244bb49b6ed1bc953fe69f725c1c4);
+            
+        
+
+        circle_marker_2087c11cc006d8cdd97e7396b0657381.bindPopup(popup_1acf1310b17818592040d5456602841c)
+        ;
+
+        
+    
+    
+            circle_marker_2087c11cc006d8cdd97e7396b0657381.bindTooltip(
+                `<div>
+                     Lucania (2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_54a85272c698acf4c1ce28f8054e6401 = L.circleMarker(
+                [41.1079984, 14.2097176],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_e8c16cd9ad8f3abe59e6bd1bd5bc3561 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_77c1f017b56523152908635f64c13ab6 = $(`<div id="html_77c1f017b56523152908635f64c13ab6" style="width: 100.0%; height: 100.0%;">     <b>Capua</b> → <i>Capua</i><br>     <b>Mentions:</b> 2<br>     <b>Geocoder:</b> Capua, Caserta, Campania, Italia<br><br>     <b>Examples:</b><br>• The insurrection of the gladiators and their devastation of Italy, which is generally called the war of Spartacus, originated as follows:--One Lentulus Batiates kept gladiators in Capua, of whom the majority, who were Gauls and Thracians, had been closely confined, not for any misbehaviour on their part, but through the villainy of their purchaser, for the purpose of fighting in the games.<br><br>• The gladiators began by repelling those who came against them from Capua and getting a stock of military weapons, for which they gladly exchanged their gladiators' arms, which they threw away as a badge of dishonour, and as barbaric.     </div>`)[0];
+                popup_e8c16cd9ad8f3abe59e6bd1bd5bc3561.setContent(html_77c1f017b56523152908635f64c13ab6);
+            
+        
+
+        circle_marker_54a85272c698acf4c1ce28f8054e6401.bindPopup(popup_e8c16cd9ad8f3abe59e6bd1bd5bc3561)
+        ;
+
+        
+    
+    
+            circle_marker_54a85272c698acf4c1ce28f8054e6401.bindTooltip(
+                `<div>
+                     Capua (2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bc2cfc9999d9d8ae58f7433f475f783c = L.circleMarker(
+                [45.9083263, 9.1420628],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_799e262adb1bed988d8ac34d7c2decc0 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_573fe1439e4e7453529212bd8cab76e3 = $(`<div id="html_573fe1439e4e7453529212bd8cab76e3" style="width: 100.0%; height: 100.0%;">     <b>Alps</b> → <i>Alps</i><br>     <b>Mentions:</b> 2<br>     <b>Geocoder:</b> Alps, Italia<br><br>     <b>Examples:</b><br>• Spartacus, after defeating the prætor himself in many other battles, and at last seizing his lictors and his horse, now became great and formidable: but still he formed a just judgment of the state of affairs and, not expecting to get the advantage over the power of the Romans, he designed to lead his forces to the Alps; thinking that it was advisable for them to cross the mountains and to go to their several homes, some to Thrace and some to Gaul.<br><br>• Spartacus now attempted to force his way towards the Alps; and Cassius who "was the governor of Gaul upon the Padus, met him with ten thousand men, and a battle was fought, in which Cassius was defeated with great lose, and with difficulty made his escape.     </div>`)[0];
+                popup_799e262adb1bed988d8ac34d7c2decc0.setContent(html_573fe1439e4e7453529212bd8cab76e3);
+            
+        
+
+        circle_marker_bc2cfc9999d9d8ae58f7433f475f783c.bindPopup(popup_799e262adb1bed988d8ac34d7c2decc0)
+        ;
+
+        
+    
+    
+            circle_marker_bc2cfc9999d9d8ae58f7433f475f783c.bindTooltip(
+                `<div>
+                     Alps (2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1ad9334abf8c92fffba86ba636a9b5e8 = L.circleMarker(
+                [42.6832194, 23.2702032],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_374f899f4f0c11d5f4240b2ceaf2e550 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_051e6cdcf2a532e1bc87d79d32a9c0f2 = $(`<div id="html_051e6cdcf2a532e1bc87d79d32a9c0f2" style="width: 100.0%; height: 100.0%;">     <b>Thrace</b> → <i>Thrace</i><br>     <b>Mentions:</b> 2<br>     <b>Geocoder:</b> Овча купел, бул. Президент Линкълн, кв. Овча купел, София, Овча купел, Столична, София-град, 1618, България<br><br>     <b>Examples:</b><br>• Spartacus, after defeating the prætor himself in many other battles, and at last seizing his lictors and his horse, now became great and formidable: but still he formed a just judgment of the state of affairs and, not expecting to get the advantage over the power of the Romans, he designed to lead his forces to the Alps; thinking that it was advisable for them to cross the mountains and to go to their several homes, some to Thrace and some to Gaul.<br><br>• Crassus had, before this, written to the Senate, to say that they ought to summon Lucullus from Thrace, and Pompeius from Iberia; but he now changed his mind, and made every effort to put an end to the war before they arrived, knowing that the success would be attributed to him who came last, and brought help, and not to himself.     </div>`)[0];
+                popup_374f899f4f0c11d5f4240b2ceaf2e550.setContent(html_051e6cdcf2a532e1bc87d79d32a9c0f2);
+            
+        
+
+        circle_marker_1ad9334abf8c92fffba86ba636a9b5e8.bindPopup(popup_374f899f4f0c11d5f4240b2ceaf2e550)
+        ;
+
+        
+    
+    
+            circle_marker_1ad9334abf8c92fffba86ba636a9b5e8.bindTooltip(
+                `<div>
+                     Thrace (2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_61f4987747f28d38daa0072ffdd62d9c = L.circleMarker(
+                [45.5842138, -73.5809681],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_c6bf27b0b1fb8af10b1fb0d0cd91a477 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_9bdcf9da4b41f9f326fe53fff6ae8f6b = $(`<div id="html_9bdcf9da4b41f9f326fe53fff6ae8f6b" style="width: 100.0%; height: 100.0%;">     <b>Zeugma</b> → <i>Zeugma</i><br>     <b>Mentions:</b> 2<br>     <b>Geocoder:</b> Zeugma, Rue Jean-Talon Est, Saint-Léonard, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H1S 1M2, Canada<br><br>     <b>Examples:</b><br>• As Crassus was taking his army over at the Zeugma, many extraordinary claps of thunder broke around, and many flashes of lightning came right in front of the army; and a wind, mingled with cloud and hurricane, falling on the raft, broke up and crushed to pieces a large part of it.<br><br>• Ignatius, calling out in the Roman language to the watch upon the walls, and making them hear, told them to tell Coponius, the commander, that there had been a great battle between Crassus and the Parthians; and, without saying more or who he was, he rode off to the Zeugma, and saved all his men; but he got a bad name for deserting his general.     </div>`)[0];
+                popup_c6bf27b0b1fb8af10b1fb0d0cd91a477.setContent(html_9bdcf9da4b41f9f326fe53fff6ae8f6b);
+            
+        
+
+        circle_marker_61f4987747f28d38daa0072ffdd62d9c.bindPopup(popup_c6bf27b0b1fb8af10b1fb0d0cd91a477)
+        ;
+
+        
+    
+    
+            circle_marker_61f4987747f28d38daa0072ffdd62d9c.bindTooltip(
+                `<div>
+                     Zeugma (2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_93789c465da6567d8b6c8967b5442cac = L.circleMarker(
+                [37.587794, 14.155048],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_01af7141105e0a63af5ae9e8b9ddf090 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_4d8743cde96bbb2d8d00269bcb371522 = $(`<div id="html_4d8743cde96bbb2d8d00269bcb371522" style="width: 100.0%; height: 100.0%;">     <b>Sicily</b> → <i>Sicily</i><br>     <b>Mentions:</b> 2<br>     <b>Geocoder:</b> Sicilia, Italia<br><br>     <b>Examples:</b><br>• Spartacus, however, avoided Crassus, and made his way through Lucania to the sea, and, falling in with some Cilician piratical vessels, in the Straits, he formed a design to seize Sicily, and by throwing two thousand men into the island, to kindle again the servile war there, the flames of which had not long since been quenched, and required only a few sparks to set it again in a blaze.<br><br>• Neither did Lucullus vanquish Tigranes without loss of blood, nor Scipio Antiochus; and our ancestors of old lost a thousand ships on the coast of Sicily, and in Italy many Imperatores and generals, not one of whom, by being first vanquished, prevented them from vanquishing the victors; for it is not by good fortune that the Roman state has advanced to such a height of power, but by the endurance and courage of those who meet danger."     </div>`)[0];
+                popup_01af7141105e0a63af5ae9e8b9ddf090.setContent(html_4d8743cde96bbb2d8d00269bcb371522);
+            
+        
+
+        circle_marker_93789c465da6567d8b6c8967b5442cac.bindPopup(popup_01af7141105e0a63af5ae9e8b9ddf090)
+        ;
+
+        
+    
+    
+            circle_marker_93789c465da6567d8b6c8967b5442cac.bindTooltip(
+                `<div>
+                     Sicily (2)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ed18ff695738cef2ce169c5398fc9d2e = L.circleMarker(
+                [37.176627, 36.1892507],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_c0fa5a55fb182d328d0c44b809f501e9 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_739efba2ed4164c2398580d7664e059c = $(`<div id="html_739efba2ed4164c2398580d7664e059c" style="width: 100.0%; height: 100.0%;">     <b>Hierapolis</b> → <i>Hierapolis</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> Kastabala Kalesi, 80-76, Tülücüler, Osmaniye, Kesmeburun, Osmaniye Merkez, Osmaniye, Akdeniz Bölgesi, Türkiye<br><br>     <b>Examples:</b><br>• The next thing the people blamed was his waste of time in Syria, which was employed more for purposes of money profit than for military purposes; for he did not occupy himself in reviewing the numbers of his troops, nor establishing games to keep the soldiers in exercise, but he busied himself about estimating the revenues of cities, and he was for many days with weights and scales in his hands among the treasures of the goddess in Hierapolis, and, after requiring from the towns and princes contingents of men, he would remit his requisitions for a sum of money; by all which he lost his reputation, and fell into contempt.     </div>`)[0];
+                popup_c0fa5a55fb182d328d0c44b809f501e9.setContent(html_739efba2ed4164c2398580d7664e059c);
+            
+        
+
+        circle_marker_ed18ff695738cef2ce169c5398fc9d2e.bindPopup(popup_c0fa5a55fb182d328d0c44b809f501e9)
+        ;
+
+        
+    
+    
+            circle_marker_ed18ff695738cef2ce169c5398fc9d2e.bindTooltip(
+                `<div>
+                     Hierapolis (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cdc93b2e65a02a00b967cfb17acba07e = L.circleMarker(
+                [41.8936904, 12.4851416],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_15a322796ffb53cc3e2dfcfe8261ed18 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_3b13083bdeaccd52f91dd39a9d8d986f = $(`<div id="html_3b13083bdeaccd52f91dd39a9d8d986f" style="width: 100.0%; height: 100.0%;">     <b>Cæsar</b> → <i>Cæsar</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> Foro di Cesare, Via dei Fori Imperiali, Campitelli, Municipio Roma I, Roma, Roma Capitale, Lazio, 00184, Italia<br><br>     <b>Examples:</b><br>• Having put garrisons in the cities that had surrendered, to the amount of seven thousand infantry and a thousand cavalry, he retired to winter in Syria, and there to await his son, who was coming from Cæsar in Gaul, with the decorations that he had gained by his valour, and with a thousand picked horsemen.     </div>`)[0];
+                popup_15a322796ffb53cc3e2dfcfe8261ed18.setContent(html_3b13083bdeaccd52f91dd39a9d8d986f);
+            
+        
+
+        circle_marker_cdc93b2e65a02a00b967cfb17acba07e.bindPopup(popup_15a322796ffb53cc3e2dfcfe8261ed18)
+        ;
+
+        
+    
+    
+            circle_marker_cdc93b2e65a02a00b967cfb17acba07e.bindTooltip(
+                `<div>
+                     Cæsar (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_264ff6bf0ea9695f1d484ccca5972eca = L.circleMarker(
+                [49.3975285, 12.8617005],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_f015f05842a0d77aa822f02efe1e1d62 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_8607f72a7d0b3d23d6699c6e6dd0ea50 = $(`<div id="html_8607f72a7d0b3d23d6699c6e6dd0ea50" style="width: 100.0%; height: 100.0%;">     <b>Babylon</b> → <i>Babylon</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> Babylon, okres Domažlice, Plzeňský kraj, Česko<br><br>     <b>Examples:</b><br>• This seemed to be the first blunder of Crassus, or at least, it was the greatest blunder that he committed next to the expedition itself; for he ought to have advanced and to have secured Babylon and Seleukeia, two cities which were always hostile to the Parthians; instead of which, he gave his enemies time to make preparation.     </div>`)[0];
+                popup_f015f05842a0d77aa822f02efe1e1d62.setContent(html_8607f72a7d0b3d23d6699c6e6dd0ea50);
+            
+        
+
+        circle_marker_264ff6bf0ea9695f1d484ccca5972eca.bindPopup(popup_f015f05842a0d77aa822f02efe1e1d62)
+        ;
+
+        
+    
+    
+            circle_marker_264ff6bf0ea9695f1d484ccca5972eca.bindTooltip(
+                `<div>
+                     Babylon (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc1e3a9180a7289af031fa8178eb39a6 = L.circleMarker(
+                [29.9743978, 78.8816643],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_89c847fe31baa5765055a7743748607d = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_1eda5288e0791c9ef54b69cbb33618bd = $(`<div id="html_1eda5288e0791c9ef54b69cbb33618bd" style="width: 100.0%; height: 100.0%;">     <b>Surena</b> → <i>Surena</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> surena, ranowa, Chaubatta Khal, Pauri Garhwal, Uttarakhand, 246162, India<br><br>     <b>Examples:</b><br>• Crassus at first attempted to prevail on them by entreaty, and he said that, if they would hold out for the rest of the day, they would be able to march by night through the rough and mountain country, and he pointed out to them the route, and entreated them not to throw away their hopes when safety was so near; but, as the soldiers began to be exasperated and to clatter their arms and threaten him, he was alarmed, and advanced towards Surena, after first turning round and merely saying, "Octavius and Petronius, and you Roman officers who are here, you see that I go under compulsion, and you are witnesses that I am treated in a shameful way and am under constraint; but, if you get safe home, tell all the world, that Crassus lost his life through the treachery of the enemy, and was not surrendered by his fellow-citizens."     </div>`)[0];
+                popup_89c847fe31baa5765055a7743748607d.setContent(html_1eda5288e0791c9ef54b69cbb33618bd);
+            
+        
+
+        circle_marker_fc1e3a9180a7289af031fa8178eb39a6.bindPopup(popup_89c847fe31baa5765055a7743748607d)
+        ;
+
+        
+    
+    
+            circle_marker_fc1e3a9180a7289af031fa8178eb39a6.bindTooltip(
+                `<div>
+                     Surena (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5d95c556bad3fb43aae2d427f9bdb8c7 = L.circleMarker(
+                [31.593762, -5.5983752],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_36c7ee8ebd973a3c80c0d7a92758b7c2 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_eba73ebbfa6359876d79987ca15a8c4c = $(`<div id="html_eba73ebbfa6359876d79987ca15a8c4c" style="width: 100.0%; height: 100.0%;">     <b>Scorpion</b> → <i>Scorpion</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> Scorpion, Toudgha El Oulia تودغى العليا, caïdat de Toudgha, Cercle de Tinghir دائرة تنغير, Drâa-Tafilalet ⴷⴰⵔⵄⴰ-ⵜⴰⴼⵉⵍⴰⵍⵜ درعة تافيلالت, Maroc ⵍⵎⵖⵔⵉⴱ المغرب<br><br>     <b>Examples:</b><br>• Cassius, indeed, returned to Carrhæ; and when the guides, who were Arabs, advised him to wait till the moon had passed the Scorpion, he replied, "I fear the Archer more than the Scorpion," and, saying this, he rode off to Syria, with five hundred horsemen.     </div>`)[0];
+                popup_36c7ee8ebd973a3c80c0d7a92758b7c2.setContent(html_eba73ebbfa6359876d79987ca15a8c4c);
+            
+        
+
+        circle_marker_5d95c556bad3fb43aae2d427f9bdb8c7.bindPopup(popup_36c7ee8ebd973a3c80c0d7a92758b7c2)
+        ;
+
+        
+    
+    
+            circle_marker_5d95c556bad3fb43aae2d427f9bdb8c7.bindTooltip(
+                `<div>
+                     Scorpion (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7fc060155a26d6239a1698c14e646aaa = L.circleMarker(
+                [49.6, -83.166667],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_ba894dbfd186826c48b4ae455465a2ad = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_b4ddfc4ed27d6a8a8b8d9c69b09f6a19 = $(`<div id="html_b4ddfc4ed27d6a8a8b8d9c69b09f6a19" style="width: 100.0%; height: 100.0%;">     <b>Parthia</b> → <i>Parthia</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> Parthia, Mattice-Val Côté Township, Cochrane District, Northeastern Ontario, Ontario, Canada<br><br>     <b>Examples:</b><br>• He attempted to persuade Crassus to invade Parthia through Armenia; for, he said, the army would not only have abundance of provision in its march through the country by reason of him supplying them, but would also advance safely, having in their front many mountains and continuous hills, and ground unfavourable for cavalry, in which alone lay the strength of the Parthians.     </div>`)[0];
+                popup_ba894dbfd186826c48b4ae455465a2ad.setContent(html_b4ddfc4ed27d6a8a8b8d9c69b09f6a19);
+            
+        
+
+        circle_marker_7fc060155a26d6239a1698c14e646aaa.bindPopup(popup_ba894dbfd186826c48b4ae455465a2ad)
+        ;
+
+        
+    
+    
+            circle_marker_7fc060155a26d6239a1698c14e646aaa.bindTooltip(
+                `<div>
+                     Parthia (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d82c8f343844e9f73899748a035e1c5b = L.circleMarker(
+                [40.860672, 14.843984],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_1ade354cdd365a36e645f991aeeb2210 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_304eae0ec5984254c2833ab995734f2a = $(`<div id="html_304eae0ec5984254c2833ab995734f2a" style="width: 100.0%; height: 100.0%;">     <b>Campania</b> → <i>Campania</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> Campania, Italia<br><br>     <b>Examples:</b><br>• But the barbarian, who was a cunning follow, with abject servility, prayed him to endure a little longer; and, while running along with the soldiers and giving them his help, he would jeer at them in a laughing mood, and say, "I suppose you think that you are marching through Campania, and you long for the fountains, and streams, and shades, and baths, and taverns?     </div>`)[0];
+                popup_1ade354cdd365a36e645f991aeeb2210.setContent(html_304eae0ec5984254c2833ab995734f2a);
+            
+        
+
+        circle_marker_d82c8f343844e9f73899748a035e1c5b.bindPopup(popup_1ade354cdd365a36e645f991aeeb2210)
+        ;
+
+        
+    
+    
+            circle_marker_d82c8f343844e9f73899748a035e1c5b.bindTooltip(
+                `<div>
+                     Campania (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b3ab14f675ce13247f9b402185a7d229 = L.circleMarker(
+                [44.0177639, 10.45443],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_5fab451bb81dbfd85a5d1e17003ee9b1 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_961dcced587991fe0d2649bf01659baa = $(`<div id="html_961dcced587991fe0d2649bf01659baa" style="width: 100.0%; height: 100.0%;">     <b>Luca</b> → <i>Luca</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> Lucca, Toscana, Italia<br><br>     <b>Examples:</b><br>• Cæsar had come down from Gaul to the city of Luca, and many of the Romans went to him there, and Pompeius and Crassus had private conferences with him, in which they agreed to take affairs in hand more vigorously, and to hold the whole power of the State at their disposal, to which end Cæsar was to remain in his military command, and Pompeius and Crassus were to have other provinces and armies.     </div>`)[0];
+                popup_5fab451bb81dbfd85a5d1e17003ee9b1.setContent(html_961dcced587991fe0d2649bf01659baa);
+            
+        
+
+        circle_marker_b3ab14f675ce13247f9b402185a7d229.bindPopup(popup_5fab451bb81dbfd85a5d1e17003ee9b1)
+        ;
+
+        
+    
+    
+            circle_marker_b3ab14f675ce13247f9b402185a7d229.bindTooltip(
+                `<div>
+                     Luca (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_126b04a336c3dff5ca6d543172a8ba94 = L.circleMarker(
+                [34.7314754, 40.8075651],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_0d0061dbb15594dd0d7a3f6009f7c940 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_c00a70c3a50d40c031e6c565dd7528a8 = $(`<div id="html_c00a70c3a50d40c031e6c565dd7528a8" style="width: 100.0%; height: 100.0%;">     <b>Euphrates</b> → <i>Euphrates</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> الفرات, سوريا<br><br>     <b>Examples:</b><br>• On his arrival, matters at first turned out fully equal to his expectation; for he easily threw a bridge over the Euphrates, and got his army across safely, and he also obtained possession of many cities in Mesopotamia which surrendered.     </div>`)[0];
+                popup_0d0061dbb15594dd0d7a3f6009f7c940.setContent(html_c00a70c3a50d40c031e6c565dd7528a8);
+            
+        
+
+        circle_marker_126b04a336c3dff5ca6d543172a8ba94.bindPopup(popup_0d0061dbb15594dd0d7a3f6009f7c940)
+        ;
+
+        
+    
+    
+            circle_marker_126b04a336c3dff5ca6d543172a8ba94.bindTooltip(
+                `<div>
+                     Euphrates (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6bd3251c4e1142bee908e492283a0a66 = L.circleMarker(
+                [37.8406038, -88.6092215],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_140b6e14f234370f2ca4b2bcef4f9c59 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_9a59ad2b409e9a52dbf36ca40fdee28f = $(`<div id="html_9a59ad2b409e9a52dbf36ca40fdee28f" style="width: 100.0%; height: 100.0%;">     <b>Galatia</b> → <i>Galatia</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> Galatia, Saline County, Illinois, 62935, United States<br><br>     <b>Examples:</b><br>• After getting together the remnant of his forces, he marched through Galatia.     </div>`)[0];
+                popup_140b6e14f234370f2ca4b2bcef4f9c59.setContent(html_9a59ad2b409e9a52dbf36ca40fdee28f);
+            
+        
+
+        circle_marker_6bd3251c4e1142bee908e492283a0a66.bindPopup(popup_140b6e14f234370f2ca4b2bcef4f9c59)
+        ;
+
+        
+    
+    
+            circle_marker_6bd3251c4e1142bee908e492283a0a66.bindTooltip(
+                `<div>
+                     Galatia (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_151c682c89285aa5d480b6b591edc826 = L.circleMarker(
+                [36.7213028, -4.4216366],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_7a71415737bbad6f40274756e108beae = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_d215293b6251c36927f5a8f440166924 = $(`<div id="html_d215293b6251c36927f5a8f440166924" style="width: 100.0%; height: 100.0%;">     <b>Malaca</b> → <i>Malaca</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> Málaga, Málaga-Costa del Sol, Málaga, Andalucía, España<br><br>     <b>Examples:</b><br>• In this way Crassus spent eight months in concealment; but as soon as he heard of Cinna's end, he showed himself, and out of the numbers that flocked to him he selected two thousand five hundred, with whom he went round to the cities; and one city, Malaca, he plundered, according to the testimony of many authors, though they say that he denied the fact, and contradicted those who affirmed it.     </div>`)[0];
+                popup_7a71415737bbad6f40274756e108beae.setContent(html_d215293b6251c36927f5a8f440166924);
+            
+        
+
+        circle_marker_151c682c89285aa5d480b6b591edc826.bindPopup(popup_7a71415737bbad6f40274756e108beae)
+        ;
+
+        
+    
+    
+            circle_marker_151c682c89285aa5d480b6b591edc826.bindTooltip(
+                `<div>
+                     Malaca (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2cace5759f134eeda172db64d41ff17 = L.circleMarker(
+                [26.8234472, 18.1236723],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_a7ed5675c985732a22c07486445ed41b = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_e07337d87ff77cf21b8a0305d408133a = $(`<div id="html_e07337d87ff77cf21b8a0305d408133a" style="width: 100.0%; height: 100.0%;">     <b>Libya</b> → <i>Libya</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> ليبيا<br><br>     <b>Examples:</b><br>• After this he got together some vessels, and crossed over to Libya, to Metellus Pius, a man of reputation who had collected a force by no means contemptible.     </div>`)[0];
+                popup_a7ed5675c985732a22c07486445ed41b.setContent(html_e07337d87ff77cf21b8a0305d408133a);
+            
+        
+
+        circle_marker_d2cace5759f134eeda172db64d41ff17.bindPopup(popup_a7ed5675c985732a22c07486445ed41b)
+        ;
+
+        
+    
+    
+            circle_marker_d2cace5759f134eeda172db64d41ff17.bindTooltip(
+                `<div>
+                     Libya (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ea021d72570833519a4b9acb34ce8ece = L.circleMarker(
+                [-3.6139449, 133.7842481],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_26791d25b30a00e2aa5528605297d607 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_35a3419864f5a6959a283be68138d3a2 = $(`<div id="html_35a3419864f5a6959a283be68138d3a2" style="width: 100.0%; height: 100.0%;">     <b>Marsi</b> → <i>Marsi</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> Marsi (Sisir 1), Kaimana, Papua Barat, Western New Guinea, Indonesia<br><br>     <b>Examples:</b><br>• Crassus, on being sent into the country of the Marsi to raise troops, asked for a guard, because the road lay through a tract which was occupied by the enemy; Sulla replied to him in passion and with vehemence, "I give thee as guards thy father, thy brother, thy friends, thy kinsmen, who were cut off illegally and wrongfully, and whose murderers I am now pursuing."     </div>`)[0];
+                popup_26791d25b30a00e2aa5528605297d607.setContent(html_35a3419864f5a6959a283be68138d3a2);
+            
+        
+
+        circle_marker_ea021d72570833519a4b9acb34ce8ece.bindPopup(popup_26791d25b30a00e2aa5528605297d607)
+        ;
+
+        
+    
+    
+            circle_marker_ea021d72570833519a4b9acb34ce8ece.bindTooltip(
+                `<div>
+                     Marsi (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4804eea0a892b6e98975c68991354c72 = L.circleMarker(
+                [20.8938074, 76.8946302],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_f89a8bb42d1a72fe1c02c2978c0bb347 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_a07bb4800f941d076d9ed32a0739a066 = $(`<div id="html_a07bb4800f941d076d9ed32a0739a066" style="width: 100.0%; height: 100.0%;">     <b>Umbri</b> → <i>Umbri</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> Umbri, Umri, Telhara, Akola, Maharashtra, India<br><br>     <b>Examples:</b><br>• All this set Crassus in a flame, and goaded him, inasmuch as he was thus slighted in comparison with Pompeius; and with good reason; Crassus was deficient in experience, and the credit that he got by his military exploits was lost by his innate vices,--love of gain and meanness; for, upon taking Tudertia, a city of the Umbri, it was suspected that he appropriated to himself most of the spoil, and this was made a matter of charge against him to Sulla.     </div>`)[0];
+                popup_f89a8bb42d1a72fe1c02c2978c0bb347.setContent(html_a07bb4800f941d076d9ed32a0739a066);
+            
+        
+
+        circle_marker_4804eea0a892b6e98975c68991354c72.bindPopup(popup_f89a8bb42d1a72fe1c02c2978c0bb347)
+        ;
+
+        
+    
+    
+            circle_marker_4804eea0a892b6e98975c68991354c72.bindTooltip(
+                `<div>
+                     Umbri (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ffa9d37086b1982c581faa9464990737 = L.circleMarker(
+                [37.0050743, 26.9470572],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_c3e210a4e339767097cc3513d7309fe7 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_7054832359d93dd5a1006be7e383f0e7 = $(`<div id="html_7054832359d93dd5a1006be7e383f0e7" style="width: 100.0%; height: 100.0%;">     <b>Spartacus</b> → <i>Spartacus</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> Spartacus, Αρμέος, Μασούρι, Δήμος Καλυμνίων, Περιφερειακή Ενότητα Καλύμνου, Περιφέρεια Νοτίου Αιγαίου, Αποκεντρωμένη Διοίκηση Αιγαίου, 852 00, Ελλάς<br><br>     <b>Examples:</b><br>• On the top of the hill there grew a great quantity of wild vines, and the men of Spartacus cutting off all the shoots that were adapted to their purpose, and, intertwining them, made strong and long ladders, so that when fastened above, they reached along the face of the precipice to the level ground, and they all safely descended by them except one man, who stayed to take care of the arms; and, when all the rest had descended, he let the arms down, and, having done this, he got down safe himself.     </div>`)[0];
+                popup_c3e210a4e339767097cc3513d7309fe7.setContent(html_7054832359d93dd5a1006be7e383f0e7);
+            
+        
+
+        circle_marker_ffa9d37086b1982c581faa9464990737.bindPopup(popup_c3e210a4e339767097cc3513d7309fe7)
+        ;
+
+        
+    
+    
+            circle_marker_ffa9d37086b1982c581faa9464990737.bindTooltip(
+                `<div>
+                     Spartacus (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_882305f47e70652ad33c93ff74a4cdbd = L.circleMarker(
+                [25.2054351, 55.1462197],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_7d74f41955d71885638499a43a148467 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_32e92663c4e036dbe1fbc08c3292e026 = $(`<div id="html_32e92663c4e036dbe1fbc08c3292e026" style="width: 100.0%; height: 100.0%;">     <b>Salenæ</b> → <i>Salenæ</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> البحيرة المالحة الكبرى, دبي, الإمارات العربية المتحدة<br><br>     <b>Examples:</b><br>• Cossinus was then despatched, with a large force, to advise with Barinus, and to be associated in the command; but Spartacus, watching his opportunity, while Cossinus was bathing at Salenæ, was very near seizing him.     </div>`)[0];
+                popup_7d74f41955d71885638499a43a148467.setContent(html_32e92663c4e036dbe1fbc08c3292e026);
+            
+        
+
+        circle_marker_882305f47e70652ad33c93ff74a4cdbd.bindPopup(popup_7d74f41955d71885638499a43a148467)
+        ;
+
+        
+    
+    
+            circle_marker_882305f47e70652ad33c93ff74a4cdbd.bindTooltip(
+                `<div>
+                     Salenæ (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e97c43ddc4895aaef4a88df17141b634 = L.circleMarker(
+                [43.1906562, 13.676672],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_f1b447a49770dade988e91de4701249d = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_f932c2a7aa517006aeb5e23186a447d4 = $(`<div id="html_f932c2a7aa517006aeb5e23186a447d4" style="width: 100.0%; height: 100.0%;">     <b>Picenum</b> → <i>Picenum</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> Picenum Trans, Viale primo maggio, Zona Artigianale Cam, Monte Urano, Fermo, 63813, Italia<br><br>     <b>Examples:</b><br>• Crassus took his station on the frontiers of Picenum, with the view of waiting for Spartacus, who was moving in that direction; and he sent Mummius, his legatus, at the head of two legions, to make a circuit, and with orders to follow the enemy, but not to engage with them, nor come to close quarters.     </div>`)[0];
+                popup_f1b447a49770dade988e91de4701249d.setContent(html_f932c2a7aa517006aeb5e23186a447d4);
+            
+        
+
+        circle_marker_e97c43ddc4895aaef4a88df17141b634.bindPopup(popup_f1b447a49770dade988e91de4701249d)
+        ;
+
+        
+    
+    
+            circle_marker_e97c43ddc4895aaef4a88df17141b634.bindTooltip(
+                `<div>
+                     Picenum (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d45a715aa8ca51e2ca3e6f4762f67f82 = L.circleMarker(
+                [34.729051, -76.5710368],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_284c8570d02b1f027b37bc08bd19df4b = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_25f511731352ca10d51b98a7fd299373 = $(`<div id="html_25f511731352ca10d51b98a7fd299373" style="width: 100.0%; height: 100.0%;">     <b>Straits</b> → <i>Straits</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> Straits, Carteret County, North Carolina, 28528, United States<br><br>     <b>Examples:</b><br>• Spartacus, however, avoided Crassus, and made his way through Lucania to the sea, and, falling in with some Cilician piratical vessels, in the Straits, he formed a design to seize Sicily, and by throwing two thousand men into the island, to kindle again the servile war there, the flames of which had not long since been quenched, and required only a few sparks to set it again in a blaze.     </div>`)[0];
+                popup_284c8570d02b1f027b37bc08bd19df4b.setContent(html_25f511731352ca10d51b98a7fd299373);
+            
+        
+
+        circle_marker_d45a715aa8ca51e2ca3e6f4762f67f82.bindPopup(popup_284c8570d02b1f027b37bc08bd19df4b)
+        ;
+
+        
+    
+    
+            circle_marker_d45a715aa8ca51e2ca3e6f4762f67f82.bindTooltip(
+                `<div>
+                     Straits (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_23893fdd2ae3a820507bbd123ee35ae0 = L.circleMarker(
+                [51.9837597, 5.3310668],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_19377dcd06e253c3e85a4df30c6a2559 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_9c5658ba3b8913976bd45a35a4b4fe1d = $(`<div id="html_9c5658ba3b8913976bd45a35a4b4fe1d" style="width: 100.0%; height: 100.0%;">     <b>Crassus</b> → <i>Crassus</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> Crassus, De Geer, Wijk bij Duurstede, Utrecht, Nederland, 3962 LL, Nederland<br><br>     <b>Examples:</b><br>• The men of Crassus endeavoured to escape notice by covering their helmets; but, being seen by two women, who were sacrificing for the enemy, they would have been in danger, if Crassus had not quickly appeared, and fought a battle, the most severely contested of all in this war, in which he destroyed twelve thousand three hundred men, of whom he found only two wounded in the back     </div>`)[0];
+                popup_19377dcd06e253c3e85a4df30c6a2559.setContent(html_9c5658ba3b8913976bd45a35a4b4fe1d);
+            
+        
+
+        circle_marker_23893fdd2ae3a820507bbd123ee35ae0.bindPopup(popup_19377dcd06e253c3e85a4df30c6a2559)
+        ;
+
+        
+    
+    
+            circle_marker_23893fdd2ae3a820507bbd123ee35ae0.bindTooltip(
+                `<div>
+                     Crassus (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bfa33c77e4dfeb744baaf82e303c0cdb = L.circleMarker(
+                [39.1094105, 16.7886538],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_1110468de04aa7cc93e74d991e972647 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_9a668822209a047377f8c6a533174886 = $(`<div id="html_9a668822209a047377f8c6a533174886" style="width: 100.0%; height: 100.0%;">     <b>Petilia</b> → <i>Petilia</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> Petilia Policastro, Crotone, Calabria, 88837, Italia<br><br>     <b>Examples:</b><br>• After the defeat of this body, Spartacus retired to the mountains of Petilia, followed by Quintius, one of the generals of Crassus, and Scrofas, his quæstor, who hung close on his rear.     </div>`)[0];
+                popup_1110468de04aa7cc93e74d991e972647.setContent(html_9a668822209a047377f8c6a533174886);
+            
+        
+
+        circle_marker_bfa33c77e4dfeb744baaf82e303c0cdb.bindPopup(popup_1110468de04aa7cc93e74d991e972647)
+        ;
+
+        
+    
+    
+            circle_marker_bfa33c77e4dfeb744baaf82e303c0cdb.bindTooltip(
+                `<div>
+                     Petilia (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b4f877c922594b168eb138af2aa307c4 = L.circleMarker(
+                [26.2540493, 29.2675469],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_11331b158ed4b99fdf9aede4c1a4bbd1 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_d2bba783da9f07f8bee162c479bf37b4 = $(`<div id="html_d2bba783da9f07f8bee162c479bf37b4" style="width: 100.0%; height: 100.0%;">     <b>Egypt</b> → <i>Egypt</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> مصر<br><br>     <b>Examples:</b><br>• But it is said that Crassus designed a shameful and violent measure, to make Egypt tributary to the Romans, and that Catulus opposed him vigorously, on which a difference arising between them, they voluntarily laid down their office.     </div>`)[0];
+                popup_11331b158ed4b99fdf9aede4c1a4bbd1.setContent(html_d2bba783da9f07f8bee162c479bf37b4);
+            
+        
+
+        circle_marker_b4f877c922594b168eb138af2aa307c4.bindPopup(popup_11331b158ed4b99fdf9aede4c1a4bbd1)
+        ;
+
+        
+    
+    
+            circle_marker_b4f877c922594b168eb138af2aa307c4.bindTooltip(
+                `<div>
+                     Egypt (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c07e53aeaa4375a467030b9837bf23a3 = L.circleMarker(
+                [31.7621153, -95.6307891],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_9b71f5978e0174a36530b9836fcac7ef = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_b742c121a1c7bbfb686d5e8fa7e73486 = $(`<div id="html_b742c121a1c7bbfb686d5e8fa7e73486" style="width: 100.0%; height: 100.0%;">     <b>Palestine</b> → <i>Palestine</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> Palestine, Anderson County, Texas, United States<br><br>     <b>Examples:</b><br>• But now, being mightily elated, and his head completely turned, he was not for making Syria or Palestine the limit of his victories; but, designing to make the exploits of Lucullus against Tigranes, and those of Pompeius against Mithridates appear mere child's play, he extended his hopes as far as to the Bactrians, and the Indians, and the external sea.     </div>`)[0];
+                popup_9b71f5978e0174a36530b9836fcac7ef.setContent(html_b742c121a1c7bbfb686d5e8fa7e73486);
+            
+        
+
+        circle_marker_c07e53aeaa4375a467030b9837bf23a3.bindPopup(popup_9b71f5978e0174a36530b9836fcac7ef)
+        ;
+
+        
+    
+    
+            circle_marker_c07e53aeaa4375a467030b9837bf23a3.bindTooltip(
+                `<div>
+                     Palestine (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c68c1bf1517c526dfbf720881bfa4ea2 = L.circleMarker(
+                [37.8483767, 27.8435878],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d8f9ecf3566209c78296b8b77ddbc851);
+        
+    
+        var popup_b0df79591eac2849c110469f5542a5b3 = L.popup({
+  "maxWidth": 450,
+});
+
+        
+            
+                var html_ac461ecba1d77d2bae4dfb9ced4628cc = $(`<div id="html_ac461ecba1d77d2bae4dfb9ced4628cc" style="width: 100.0%; height: 100.0%;">     <b>Tralles</b> → <i>Tralles</i><br>     <b>Mentions:</b> 1<br>     <b>Geocoder:</b> Aydın, Efeler, Aydın, Ege Bölgesi, 09110, Türkiye<br><br>     <b>Examples:</b><br>• When the head of Crassus was brought to the door, the tables were taken away, and a tragedy actor Jason, by name, a native of Tralles, chanted that part of the Bacchæ of Euripides which relates to Agave.     </div>`)[0];
+                popup_b0df79591eac2849c110469f5542a5b3.setContent(html_ac461ecba1d77d2bae4dfb9ced4628cc);
+            
+        
+
+        circle_marker_c68c1bf1517c526dfbf720881bfa4ea2.bindPopup(popup_b0df79591eac2849c110469f5542a5b3)
+        ;
+
+        
+    
+    
+            circle_marker_c68c1bf1517c526dfbf720881bfa4ea2.bindTooltip(
+                `<div>
+                     Tralles (1)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_d8f9ecf3566209c78296b8b77ddbc851.addTo(map_bbf6012d24f82443d4ce8cf87b9681b2);
+        
+</script>
+</html>
