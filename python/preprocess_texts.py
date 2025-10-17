@@ -2,12 +2,12 @@
 """
 Section Extraction Script for NLP Corpus Preparation
 
-This script processes all plain text files in a specified input directory,
-splits each file into sections based on recognizable section headers
-(e.g., "LIFE OF ..." or "COMPARISON OF ..."), removes non-semantic line breaks
-(i.e., joins lines within paragraphs), and writes each section to a separate output file. Output files are named for both the source file and the section title to ensure uniqueness and traceability.
+This script processes all plain text files in a specified input directory, splits each file into sections based on recognizable section headers (e.g., "LIFE OF ..." or "COMPARISON OF ..."), removes non-semantic line breaks (i.e., joins lines within paragraphs), and writes each section to a separate output file. Output files are named for both the source file and the section title to ensure uniqueness and traceability
 
 Intended for use in preparing corpora for Natural Language Processing tasks.
+
+Usage:
+    python preprocess_texts.py <input_directory> <output_directory>
 
 author: Samuel J. Huskey
 date: 2025-09-01
@@ -58,6 +58,8 @@ def remove_footnotes(text):
     for i, line in enumerate(lines):
         if line.strip().lower().startswith("footnotes:"):
             return "\n".join(lines[:i]).rstrip()  # Drop everything from here to the end
+        if line.strip().lower().startswith("[footnote "):
+            return "\n".join(lines[:i]).rstrip()  # Drop everything from here to the end
     return text  # Return unchanged if no 'FOOTNOTES:' found 
 
 def process_file(input_directory, output_directory):
@@ -72,6 +74,10 @@ def process_file(input_directory, output_directory):
     for file_path in input_directory.glob("*.txt"):
         with open(file_path, "r", encoding="utf-8") as f:
             original_text = f.read()
+            # Replace Æ and æ with AE and ae
+            original_text = original_text.replace("Æ", "AE").replace("æ", "ae")
+            # Replace Œ and œ with OE and oe
+            original_text = original_text.replace("Œ", "OE").replace("œ", "oe")
             # Regular expression pattern to match section headers
             # Matches lines starting with "LIFE OF ..." or "COMPARISON OF ..."
             section_pattern = re.compile(r"^(LIFE OF [A-Z .]+|COMPARISON OF[^\n]*)$", re.MULTILINE)
